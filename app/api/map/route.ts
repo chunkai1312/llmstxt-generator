@@ -11,15 +11,16 @@ export async function POST(request: Request) {
   let limit: number = 100;
   console.log("url", url);
 
-  if (bringYourOwnFirecrawlApiKey) {
-    firecrawlApiKey = bringYourOwnFirecrawlApiKey;
-    console.log("Using provided Firecrawl API key. Limit set to 100");
+  // if (bringYourOwnFirecrawlApiKey) {
+  //   firecrawlApiKey = bringYourOwnFirecrawlApiKey;
+  //   console.log("Using provided Firecrawl API key. Limit set to 100");
     
-  } else {
-    firecrawlApiKey = process.env.FIRECRAWL_API_KEY;
-    limit = 10;
-    console.log("Using default limit of 10");
-  }
+  // } else {
+  //   firecrawlApiKey = process.env.FIRECRAWL_API_KEY;
+  //   limit = 10;
+  //   console.log("Using default limit of 10");
+  // }
+  firecrawlApiKey = process.env.FIRECRAWL_API_KEY;
 
   if (!firecrawlApiKey) {
     throw new Error('FIRECRAWL_API_KEY is not set');
