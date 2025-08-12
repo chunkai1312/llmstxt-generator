@@ -26,9 +26,6 @@ Note: Processing may take several minutes due to crawling and LLM operations.
 Create a `.env` file with the following variables:
 ```
 FIRECRAWL_API_KEY=
-SUPABASE_URL=
-SUPABASE_KEY=
-OPENAI_API_KEY=
 ```
 
 ### Installation
