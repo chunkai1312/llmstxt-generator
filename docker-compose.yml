@@ -1,0 +1,9 @@
+services:
+  web:
+    image: chunkai1312/llmstxt-generator:latest
+    restart: always
+    container_name: llmstxt-generator
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
