@@ -31,17 +31,6 @@ export default function RootLayout({
       <body
       className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-background text-secondary-foreground`}
       >
-        <div className="w-full bg-orange-500 py-2 text-center text-sm text-white">
-          🎉 The official Firecrawl llms.txt endpoint is now available! 
-          <a 
-            href="https://docs.firecrawl.dev/features/alpha/llmstxt"
-            className="ml-1 underline hover:text-orange-100"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn more →
-          </a>
-        </div>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
